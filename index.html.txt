@@ -1,0 +1,20 @@
+<html>
+  <body style="text-align:center; font-family:Arial;">
+    <h2>Enter Password to Access Files</h2>
+    <input type="password" id="pass" placeholder="Enter password">
+    <button onclick="checkPass()">Submit</button>
+    <p id="message"></p>
+
+    <script>
+      function checkPass() {
+        var input = document.getElementById("pass").value;
+        var correct = "Kncpt@98045"; // <--- change this to your password
+        if (input === correct) {
+          window.location.href = "https://drive.google.com/drive/folders/1_S05FcBoOtBXEPq1GcV-5Agc--p4tLda"; // <--- paste your Drive link
+        } else {
+          document.getElementById("message").innerHTML = "Incorrect password. Try again.";
+        }
+      }
+    </script>
+  </body>
+</html>
